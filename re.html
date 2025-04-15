@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umashankar Boga Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e0f7f0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100%;
+        }
+
+        .sidebar .menu-icon {
+            font-size: 24px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li a i {
+            margin-right: 10px;
+            color: #4caf50;
+        }
+
+        .sidebar .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .sidebar .profile h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .sidebar .profile p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .sidebar .profile .contact {
+            margin-top: 10px;
+        }
+
+        .sidebar .profile .contact a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .sidebar .profile .buttons a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 8px 15px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about-me h2, .experience h2, .education h2, .skills h2 {
+            color: #4caf50;
+            margin-bottom: 15px;
+        }
+
+        .about-me p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .experience ul, .education ul, .skills ul {
+            list-style: none;
+        }
+
+        .experience ul li, .education ul li {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .skills ul li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #e0f7f0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-icon">☰</div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <h2>Umashankar Boga</h2>
+            <p>Aspiring Software Developer</p>
+            <div class="contact">
+                <a href="tel:+7989212620">+7989212620</a> | 
+                <a href="mailto:uma208208@gmail.com">uma208208@gmail.com</a> | 
+                Hyderabad, Telangana
+            </div>
+            <div class="contact">
+                <a href="https://linkedin.com/in/uma-shankar-9382b427b" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/umashankargi" target="_blank">GitHub</a>
+            </div>
+            <div class="buttons">
+                <a href="#">DOWNLOAD CV</a>
+                <a href="#">CONTACT ME</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="resume.pdf"><i class="fas fa-file-alt"></i>Resume</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i>Works</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="card about-me">
+            <h2>About Me</h2>
+            <p>Software developer with a Bachelor's degree in IoT and practical experience in building web-based and IoT applications. Skilled in Python, Java, C, and HTML. Focused on developing efficient, reliable solutions through clean code and testing.</p>
+        </div>
+        <div class="card experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Salesforce Developer - Virtual Internship</strong> (Apr 2021 - Jun 2021)<br>Improved workflow efficiency by 20% through Apex and Visualforce-based automation. Customized Salesforce CRM features to streamline lead tracking and reporting.</li>
+                <li><strong>IoT Training Intern - Soham Internship</strong> (2022)<br>Conducted training sessions for over 50 school students on IoT fundamentals and Arduino. Designed and delivered 5+ hands-on workshops that improved student engagement.</li>
+            </ul>
+        </div>
+        <div class="card education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>ACE Engineering College, Ghatkesar</strong><br>Bachelor of Technology (IoT) | CGPA: 8.3 | 2021 - 2024</li>
+                <li><strong>Government Institution of Electronics, Secunderabad</strong><br>Diploma in Communication Engineering | CGPA: 7.5 | 2017 - 2020</li>
+                <li><strong>Trinity High School, Choutuppal</strong><br>Secondary School Certificate (SSC) | CGPA: 8.8 | 2016 - 2017</li>
+            </ul>
+        </div>
+        <div class="card skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>Flutter</li>
+                <li>GitHub</li>
+                <li>IoT</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Salesforce</li>
+                <li>Microsoft Excel</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
