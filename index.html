@@ -577,7 +577,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        
         <header>
             <div class="logo">Portfolio</div>
             <nav>
@@ -590,7 +590,7 @@
             </nav>
         </header>
 
-        <!-- Hero Section -->
+        
         <section class="hero" id="home">
             <div class="hero-content">
                 <p class="greeting">Hello, I'm</p>
@@ -610,7 +610,7 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        
         <section class="section" id="about">
             <h2 class="section-title">About Me</h2>
             <div class="card">
@@ -631,7 +631,7 @@
             </div>
         </section>
 
-        <!-- Resume Section -->
+        
         <section class="section" id="resume">
             <h2 class="section-title">My Resume</h2>
             <div class="card resume-container">
@@ -646,7 +646,7 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        
         <section class="section" id="skills">
             <h2 class="section-title">Technical Skills</h2>
             <div class="card">
@@ -697,7 +697,7 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        
         <section class="section" id="projects">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
@@ -725,36 +725,58 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        
         <section class="section" id="contact">
             <h2 class="section-title">Get In Touch</h2>
             <div class="card">
+        
+                
                 <div class="contact-item">
                     <div class="contact-icon">✉️</div>
                     <div class="contact-text">
                         <a href="mailto:uma208208@gmail.com">uma208208@gmail.com</a>
                     </div>
                 </div>
+        
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                    </div>
+                    <div class="contact-text">
+                        <a href="https://wa.me/917989212620" target="_blank">+91 7989212620</a>
+                    </div>
+                </div>
+        
+                
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
-                    <div class="contact-text">+91 7989212620</div>
+                    <div class="contact-text">
+                        <a href="tel:+917989212620">+91 7989212620</a>
+                    </div>
                 </div>
+        
+                
                 <div class="contact-item">
                     <div class="contact-icon">🔗</div>
                     <div class="contact-text">
                         <a href="https://linkedin.com/in/uma-shankar-9382b427b" target="_blank">linkedin.com/in/uma-shankar</a>
                     </div>
                 </div>
+        
+                
                 <div class="contact-item">
                     <div class="contact-icon">💻</div>
                     <div class="contact-text">
                         <a href="https://github.com/umashankargi" target="_blank">github.com/umashankargi</a>
                     </div>
                 </div>
+        
             </div>
         </section>
+        
 
-        <!-- AI Assistant -->
+        
         <div class="ai-assistant">
             <div class="ai-button" id="aiButton">🤖</div>
             <div class="ai-chat-window" id="aiChatWindow">
@@ -772,17 +794,17 @@
             </div>
         </div>
 
-        <!-- Footer -->
+        
         <footer>
             <p>© <span id="year"></span> Boga Umashankar. All rights reserved.</p>
         </footer>
     </div>
 
     <script>
-        // Update copyright year automatically
+        
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Toggle resume visibility
+        
         const resumePreview = document.getElementById('resumePreview');
         const toggleResumeBtn = document.getElementById('toggleResume');
         const closeResumeBtn = document.getElementById('closeResume');
@@ -797,7 +819,7 @@
             resumePreview.classList.remove('active');
         });
 
-        // AI Assistant functionality
+       
         const aiButton = document.getElementById('aiButton');
         const aiChatWindow = document.getElementById('aiChatWindow');
         const aiCloseBtn = document.getElementById('aiCloseBtn');
@@ -805,7 +827,7 @@
         const aiInput = document.getElementById('aiInput');
         const aiChatBody = document.getElementById('aiChatBody');
 
-        // Toggle chat window
+        
         aiButton.addEventListener('click', () => {
             aiChatWindow.classList.toggle('active');
         });
@@ -814,7 +836,7 @@
             aiChatWindow.classList.remove('active');
         });
 
-        // Simple response logic (can be enhanced with API integration)
+        
         const responses = {
             'hi': 'Hello! How can I assist you with exploring Boga Umashankar\'s portfolio?',
             'about': 'Boga Umashankar is a software developer specializing in full-stack development with expertise in Python, Java, and web technologies. Check the About section for more details!',
@@ -844,7 +866,7 @@
             addMessage(message, true);
             aiInput.value = '';
 
-            // Simple keyword-based response
+            
             const lowerMessage = message.toLowerCase();
             let response = 'I\'m here to help! Try asking about "about", "skills", "projects", "contact", or "resume".';
             
